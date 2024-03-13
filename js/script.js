@@ -21,12 +21,24 @@ createApp({
           done: false,
         },
       ],
+      newTask: {
+        text: "",
+        done: false,
+      },
     };
   },
 
   methods: {
     removeTask(index) {
       this.toDoList.splice(index, 1);
+    },
+
+    addTask() {
+      this.toDoList.unshift(this.newTask);
+      this.newTask = {
+        text: "",
+        done: false,
+      };
     },
   },
 }).mount("#app");
