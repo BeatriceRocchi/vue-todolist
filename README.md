@@ -9,7 +9,7 @@ Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
 
 #### MILESTONE 2
 
-Visualizzare a fianco ad ogni item ha una “x”: cliccando su di essa, il todo viene rimosso dalla lista.
+Visualizzare a fianco ad ogni item ha un cestino: cliccando su di esso, il todo viene rimosso dalla lista.
 
 #### MILESTONE 3
 
@@ -27,3 +27,6 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 1. Predisporre ambiente per lavorare con Vue
 2. In data, creare un array di oggetti (task), ciascuno due proprietà: a) text (stringa per descrivere il task) e b) done (booleano per indicare se il task è stato fatto)
 3. Con un ciclo v-for nell'li, stampare tutti i task presenti nell'array di oggetti. All'li passare dinamicamente anche la classe done definita in css se il booleano done è true
+4. Alla creazione del li con il ciclo v-for, recuperare anche l'indice dell'elemento nell'array
+5. Al click sul cestino, richiamare la funzione removeTask a cui passare come argomento l'indice dell'elemento
+6. Con la funzione removeTask(index), rimuovere dall'array l'elemento avente l'indice passato come parametro

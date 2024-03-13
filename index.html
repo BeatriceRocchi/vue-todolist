@@ -41,9 +41,9 @@
 
       <div class="task-container">
         <ul>
-          <li v-for="task in toDoList" :class="{'done': task.done}">
+          <li v-for="(task, index) in toDoList" :class="{'done': task.done}">
             <span>{{task.text}}</span>
-            <i class="fa-solid fa-trash-can"></i>
+            <i @click="removeTask(index)" class="fa-solid fa-trash-can"></i>
           </li>
         </ul>
       </div>
