@@ -37,7 +37,7 @@
         <input
           placeholder="Nuovo task"
           type="text"
-          v-model="newTask.text"
+          v-model.trim="newTask.text"
           @keyup.enter="addTask"
         />
         <button @click="addTask">Aggiungi</button>
@@ -46,9 +46,16 @@
 
       <div class="task-container">
         <ul>
-          <li v-for="(task, index) in toDoList" :class="{'done': task.done}">
+          <li
+            v-for="(task, index) in toDoList"
+            :class="{'done': task.done}"
+            @click="task.done = !task.done"
+          >
             <span>{{task.text}}</span>
-            <i @click="removeTask(index)" class="fa-solid fa-trash-can"></i>
+            <i
+              @click.stop="removeTask(index)"
+              class="fa-solid fa-trash-can"
+            ></i>
           </li>
         </ul>
       </div>

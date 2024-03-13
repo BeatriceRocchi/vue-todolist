@@ -36,3 +36,4 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 10. Con la funzione addTask, aggiungere all'array il newTask come primo elemento e poi resettare tutto l'oggetto newTask
 11. In data, creare una variabile per il messaggio di errore inizializzata come stringa vuota
 12. Aggiungere condizione per controllare lunghezza del testo di input nella funzione addTask. Se la lunghezza è inferiore a 4 caratteri, far apparire messaggio di errore
+13. Al @click sull'li con il task, invertire proprietà done del task
