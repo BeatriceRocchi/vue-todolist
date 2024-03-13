@@ -21,3 +21,9 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 2. Cliccando sul testo dell’item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 3. Rendere eliminabili solo i task con done === true. In caso contrario esporre un messaggio di errore diverso dal precedente
 4. Se la lista è vuota stampare “Non sono presenti task” al posto della lista.
+
+## Svolgimento
+
+1. Predisporre ambiente per lavorare con Vue
+2. In data, creare un array di oggetti (task), ciascuno due proprietà: a) text (stringa per descrivere il task) e b) done (booleano per indicare se il task è stato fatto)
+3. Con un ciclo v-for nell'li, stampare tutti i task presenti nell'array di oggetti. All'li passare dinamicamente anche la classe done definita in css se il booleano done è true

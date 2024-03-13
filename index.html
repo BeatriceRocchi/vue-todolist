@@ -41,20 +41,8 @@
 
       <div class="task-container">
         <ul>
-          <li>
-            <span>task....</span>
-            <i class="fa-solid fa-trash-can"></i>
-          </li>
-          <li>
-            <span>task....</span>
-            <i class="fa-solid fa-trash-can"></i>
-          </li>
-          <li>
-            <span>task....</span>
-            <i class="fa-solid fa-trash-can"></i>
-          </li>
-          <li>
-            <span>task....</span>
+          <li v-for="task in toDoList" :class="{'done': task.done}">
+            <span>{{task.text}}</span>
             <i class="fa-solid fa-trash-can"></i>
           </li>
         </ul>
