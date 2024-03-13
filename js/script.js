@@ -25,6 +25,7 @@ createApp({
         text: "",
         done: false,
       },
+      errorMessage: "",
     };
   },
 
@@ -34,11 +35,17 @@ createApp({
     },
 
     addTask() {
-      this.toDoList.unshift(this.newTask);
-      this.newTask = {
-        text: "",
-        done: false,
-      };
+      if (this.newTask.text.length >= 4) {
+        this.toDoList.unshift(this.newTask);
+        this.newTask = {
+          text: "",
+          done: false,
+        };
+        this.errorMessage = "";
+      } else {
+        this.errorMessage =
+          "Attenzione! Il task inserito ha una lunghezza inferiore ai 4 caratteri";
+      }
     },
   },
 }).mount("#app");

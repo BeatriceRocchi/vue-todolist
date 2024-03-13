@@ -30,3 +30,9 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 4. Alla creazione del li con il ciclo v-for, recuperare anche l'indice dell'elemento nell'array
 5. Al click sul cestino, richiamare la funzione removeTask a cui passare come argomento l'indice dell'elemento
 6. Con la funzione removeTask(index), rimuovere dall'array l'elemento avente l'indice passato come parametro
+7. In data, creare un oggetto newTask con le proprietà: a) text inizializzato come stringa vuota e b) done inizializzato a false
+8. Inserire nel campo di input un v-model per leggere l'input inserito dall'utente che sarà la proprietà text di newTask
+9. Al @click sul pulsante "Aggiungi" e/o al @keyup.enter sull'input, richiamare la funzione addTask
+10. Con la funzione addTask, aggiungere all'array il newTask come primo elemento e poi resettare tutto l'oggetto newTask
+11. In data, creare una variabile per il messaggio di errore inizializzata come stringa vuota
+12. Aggiungere condizione per controllare lunghezza del testo di input nella funzione addTask. Se la lunghezza è inferiore a 4 caratteri, far apparire messaggio di errore
