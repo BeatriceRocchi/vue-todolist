@@ -37,3 +37,4 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 11. In data, creare una variabile per il messaggio di errore inizializzata come stringa vuota
 12. Aggiungere condizione per controllare lunghezza del testo di input nella funzione addTask. Se la lunghezza è inferiore a 4 caratteri, far apparire messaggio di errore
 13. Al @click sull'li con il task, invertire proprietà done del task
+14. Aggiungere condizione per controllare che siano eliminabili solo i task con proprietà done con valore true nella funzione removeTask. Se la proprietà done ha valore false, far apparire messaggio di errore

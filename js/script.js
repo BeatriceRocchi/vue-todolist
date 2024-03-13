@@ -31,7 +31,13 @@ createApp({
 
   methods: {
     removeTask(index) {
-      this.toDoList.splice(index, 1);
+      if (this.toDoList[index].done === true) {
+        this.toDoList.splice(index, 1);
+        this.errorMessage = "";
+      } else {
+        this.errorMessage =
+          "Attenzione! Devi aver sbarrato il task per poterlo eliminare dalla lista";
+      }
     },
 
     addTask() {
