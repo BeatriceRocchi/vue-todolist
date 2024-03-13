@@ -45,7 +45,7 @@
       </div>
 
       <div class="task-container">
-        <ul>
+        <ul v-if="toDoList.length > 0">
           <li
             v-for="(task, index) in toDoList"
             :class="{'done': task.done}"
@@ -58,6 +58,7 @@
             ></i>
           </li>
         </ul>
+        <h4 id="void-list-msg" v-else>Non sono presenti task</h4>
       </div>
     </div>
     <!-- JS -->

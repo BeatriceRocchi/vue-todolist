@@ -38,3 +38,6 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 12. Aggiungere condizione per controllare lunghezza del testo di input nella funzione addTask. Se la lunghezza è inferiore a 4 caratteri, far apparire messaggio di errore
 13. Al @click sull'li con il task, invertire proprietà done del task
 14. Aggiungere condizione per controllare che siano eliminabili solo i task con proprietà done con valore true nella funzione removeTask. Se la proprietà done ha valore false, far apparire messaggio di errore
+15. In html, dopo la lista ul, inserire un elemento contenente il testo“Non sono presenti task”
+16. Nella lista ul in html, inserire una condizione v-if per rendere la lista visibile solo non è vuota
+17. Nell'elemento contenente il testo “Non sono presenti task” appena creato, inserire la condizione v-else
