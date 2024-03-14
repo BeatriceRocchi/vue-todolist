@@ -49,7 +49,7 @@
           <li
             v-for="(task, index) in toDoList"
             :class="{'done': task.done}"
-            @click="task.done = !task.done"
+            @click="toggleTask(task)"
           >
             <span>{{task.text}}</span>
             <i

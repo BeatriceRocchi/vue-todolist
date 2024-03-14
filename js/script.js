@@ -40,6 +40,11 @@ createApp({
       }
     },
 
+    toggleTask(task) {
+      task.done = !task.done;
+      this.errorMessage = "";
+    },
+
     addTask() {
       if (this.newTask.text.length >= 4) {
         this.toDoList.unshift(this.newTask);
